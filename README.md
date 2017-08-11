@@ -26,7 +26,7 @@ npm run start  #运行前端文件
 - app.js        #项目启动js文件
 - app.vue       #根组件
 
-###配置前端ajax base url
+### 配置前端ajax base url
 ```
 cd frontend/src/api/index.js
 ```
