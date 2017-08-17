@@ -64,7 +64,7 @@
 
 <script>
     export default {
-        data() {
+        data () {
             return {
                 id : this.$route.query.id,
                 tiptext: '分类添加成功!',

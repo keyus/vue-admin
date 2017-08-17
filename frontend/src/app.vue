@@ -38,7 +38,7 @@ div.app
                 padding-top: 3rem;
                 padding-bottom: 2rem;
             }
-            .page-container-space{
+            .page-container-space {
                 height: 4rem;
             }
         }

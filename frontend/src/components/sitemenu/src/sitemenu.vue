@@ -125,6 +125,7 @@ div.sitemenu
 </style>
 
 <script>
+    import { mapState } from 'vuex';
     export default {
         name: "AmSitemenu",
         data () {
@@ -135,7 +136,7 @@ div.sitemenu
         computed : {
             currentMenu () {
                 return this.$store.state.currentMenu
-            }
+            },
         },
 
         methods : {

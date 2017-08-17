@@ -1,5 +1,11 @@
-const fs = require('fs');
-const path              = require('path');
+class A {
+    constructor (a='2') {
+        console.log(a)
+    }
 
+    b(){
 
-console.log(__dirname)
+    }
+
+}
+new A(3);

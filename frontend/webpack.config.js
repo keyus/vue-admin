@@ -5,6 +5,7 @@ const path              = require('path');
 const fs                = require('fs');
 const pug_files         = path.resolve(`${__dirname}/src/page`);        //pug 页面模板目录
 
+
 var env = process.env.NODE_ENV;
 
 //捡出css插件
@@ -63,8 +64,10 @@ config.module = {
             //include: /src/,             //只编译src目录下 提高编译速度，使用正则
             exclude : path.resolve(__dirname,'node_modules'),       //使用一个绝对路径，需要借助  node的path api.生成绝对路径
             include : path.resolve(__dirname,'src'),
-            query: {
-                presets : ["es2015"]
+
+            options : {
+                plugins: [ require('babel-plugin-transform-object-rest-spread') ],
+                presets : ["es2015"],
             }
         },
         //css 处理
